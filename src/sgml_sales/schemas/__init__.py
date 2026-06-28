@@ -3,6 +3,7 @@
 from .inputs import (
     CustomerCreate,
     InvoiceCreate,
+    LeadConvert,
     LeadCreate,
     OpportunityCreate,
     OrderCreate,
@@ -14,6 +15,7 @@ __all__ = [
     "AccountingSummary",
     "CustomerCreate",
     "InvoiceCreate",
+    "LeadConvert",
     "LeadCreate",
     "OpportunityCreate",
     "OrderCreate",

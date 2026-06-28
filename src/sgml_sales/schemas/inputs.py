@@ -37,6 +37,20 @@ class LeadCreate(SQLModel):
     customer_id: int | None = None
 
 
+class LeadConvert(SQLModel):
+    """Body for converting a qualified lead into an opportunity.
+
+    If ``customer_id`` is omitted, a Customer is created from the lead's
+    name/email. ``amount`` defaults to the annual ACV ($2.5k/mo retainer ≈
+    $30k/yr per SALES-STRATEGY); override per deal.
+    """
+
+    customer_id: int | None = None
+    opportunity_name: str | None = None
+    amount: float = 30000.0
+    probability: float = 0.1
+
+
 class OpportunityCreate(SQLModel):
     name: str
     customer_id: int
