@@ -135,5 +135,7 @@ Referrals/partnerships are being worked separately by the operator.
 - Define the tiered offer ladder to raise blended ACV (operator-led).
 - Pick the interim CRM and load the 8 stages.
 - ~~Build the first concrete skill or asset (candidate: `/draft-outreach`…).~~ **Done** —
-  `/draft-outreach` skill built (`.claude/skills/draft-outreach/`). Next asset candidate:
-  the Profit-Leak Checklist lead magnet.
+  `/draft-outreach` skill built (`.claude/skills/draft-outreach/`) and the **Profit-Leak
+  Checklist** lead magnet drafted
+  ([`COLD-LEAD-PLAYBOOK` → lead-magnets/](COLD-LEAD-PLAYBOOK.md)). Next: stand the checklist
+  up as a landing page + email capture (Phase 0 measurement), and write the ICP filter spec.

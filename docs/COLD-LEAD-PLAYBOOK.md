@@ -135,8 +135,9 @@ stay in front of them until it does. This half compounds.
 Use the **same two assets the marketing channel uses** so the funnel is one system
 (see the Marketing Director Strategy §4 in the pipeline repo):
 - **TOFU — "The Profit-Leak Checklist for Multi-Platform Sellers"** (~12 places margin
-  leaks): the lighter-touch capture for prospects not ready to talk. *(A GST/HST &
-  US-nexus guide is a fine secondary magnet for compliance-triggered prospects.)*
+  leaks): the lighter-touch capture for prospects not ready to talk — **drafted** at
+  [`lead-magnets/profit-leak-checklist.md`](lead-magnets/profit-leak-checklist.md). *(A
+  GST/HST & US-nexus guide is a fine secondary magnet for compliance-triggered prospects.)*
 - **BOFU — the free "Margin Leak Review" (30 min)**: the primary CTA; a mini-version of
   the service and our tracked conversion (the booked call).
 - Opt-ins flow into the **newsletter + LinkedIn content** (the marketing channel).
@@ -188,8 +189,9 @@ marketing lead-log CSV — it never modifies the marketing pipeline. See
 - ✅ **`/draft-outreach`** skill — **built** (`.claude/skills/draft-outreach/`): given a
   prospect/segment, returns a tailored LinkedIn + email sequence in the aligned voice,
   self-checked against `OUTREACH-VOICE.md`.
-- **Lead-magnet asset** — the **Profit-Leak Checklist for Multi-Platform Sellers** (the
-  linchpin between outbound and the marketing channel; a GST/HST + US-nexus guide is a fine
-  secondary magnet).
+- ✅ **Lead-magnet asset** — **drafted**: the **Profit-Leak Checklist for Multi-Platform
+  Sellers** ([`lead-magnets/profit-leak-checklist.md`](lead-magnets/profit-leak-checklist.md)),
+  the linchpin between outbound and the marketing channel. Stand it up as a PDF / landing
+  page with email capture. (A GST/HST + US-nexus guide is a fine secondary magnet.)
 - **ICP filter spec** — the exact Store Leads / Sales Navigator filter set, saved for repeatable
   list pulls.
