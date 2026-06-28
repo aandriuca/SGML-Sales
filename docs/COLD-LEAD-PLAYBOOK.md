@@ -185,9 +185,11 @@ marketing lead-log CSV — it never modifies the marketing pipeline. See
 
 ## Suggested next artifacts
 
-- **`/draft-outreach`** skill — given a prospect/segment, returns a tailored LinkedIn +
-  email sequence in the SGML voice.
-- **Lead-magnet asset** — the GST/HST + US-nexus checklist (linchpin between outbound and
-  the marketing channel).
+- ✅ **`/draft-outreach`** skill — **built** (`.claude/skills/draft-outreach/`): given a
+  prospect/segment, returns a tailored LinkedIn + email sequence in the aligned voice,
+  self-checked against `OUTREACH-VOICE.md`.
+- **Lead-magnet asset** — the **Profit-Leak Checklist for Multi-Platform Sellers** (the
+  linchpin between outbound and the marketing channel; a GST/HST + US-nexus guide is a fine
+  secondary magnet).
 - **ICP filter spec** — the exact Store Leads / Sales Navigator filter set, saved for repeatable
   list pulls.

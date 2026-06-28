@@ -134,5 +134,6 @@ Referrals/partnerships are being worked separately by the operator.
   [`OUTREACH-VOICE.md`](OUTREACH-VOICE.md) and the realigned Cold Lead Playbook templates.
 - Define the tiered offer ladder to raise blended ACV (operator-led).
 - Pick the interim CRM and load the 8 stages.
-- Build the first concrete skill or asset (candidate: `/draft-outreach`, the Cold Lead
-  Playbook itself, or the lead-magnet checklist).
+- ~~Build the first concrete skill or asset (candidate: `/draft-outreach`…).~~ **Done** —
+  `/draft-outreach` skill built (`.claude/skills/draft-outreach/`). Next asset candidate:
+  the Profit-Leak Checklist lead magnet.
