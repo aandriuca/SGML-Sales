@@ -45,6 +45,18 @@ Product/Service catalog feeds Quotes, Orders, Invoices
 
 See [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for detail.
 
+## Sales strategy & playbooks
+
+The business strategy driving this software is captured in:
+
+- [`docs/SALES-STRATEGY.md`](docs/SALES-STRATEGY.md) — revenue model, ICP, pipeline
+  stages, qualification scorecard, and the path from $1M to $10M recurring.
+- [`docs/COLD-LEAD-PLAYBOOK.md`](docs/COLD-LEAD-PLAYBOOK.md) — the cold lead engine
+  (source → engage → nurture) for reaching Canadian e-commerce owners.
+
+> These are the working notes from the virtual-VP-of-Sales sessions. Read them first to
+> pick up full context in a new session.
+
 ## Quick start
 
 ```bash
