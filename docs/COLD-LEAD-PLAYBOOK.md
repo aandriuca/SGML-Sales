@@ -193,5 +193,7 @@ marketing lead-log CSV — it never modifies the marketing pipeline. See
   Sellers** ([`lead-magnets/profit-leak-checklist.md`](lead-magnets/profit-leak-checklist.md)),
   the linchpin between outbound and the marketing channel. Stand it up as a PDF / landing
   page with email capture. (A GST/HST + US-nexus guide is a fine secondary magnet.)
-- **ICP filter spec** — the exact Store Leads / Sales Navigator filter set, saved for repeatable
-  list pulls.
+- ✅ **ICP filter spec** — **written** ([`ICP-FILTER-SPEC.md`](ICP-FILTER-SPEC.md)): the
+  exact Store Leads / Sales Navigator filter set + disqualifiers for repeatable list pulls.
+- ✅ **`/qualify-lead`** skill — **built** (`.claude/skills/qualify-lead/`): scores a
+  prospect against the qualification scorecard and recommends the next pipeline action.

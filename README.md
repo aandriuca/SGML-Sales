@@ -53,6 +53,17 @@ The business strategy driving this software is captured in:
   stages, qualification scorecard, and the path from $1M to $10M recurring.
 - [`docs/COLD-LEAD-PLAYBOOK.md`](docs/COLD-LEAD-PLAYBOOK.md) — the cold lead engine
   (source → engage → nurture) for reaching Canadian e-commerce owners.
+- [`docs/OUTREACH-VOICE.md`](docs/OUTREACH-VOICE.md) — outreach voice, aligned to the
+  SGML Marketing Pipeline brand (which is **read-only** to this repo; see `CLAUDE.md`).
+- [`docs/ICP-FILTER-SPEC.md`](docs/ICP-FILTER-SPEC.md) — repeatable right-fit list pulls.
+- [`docs/MARKETING-LEAD-IMPORT.md`](docs/MARKETING-LEAD-IMPORT.md) — feed-only import of
+  marketing leads into SGML Sales.
+- [`docs/lead-magnets/profit-leak-checklist.md`](docs/lead-magnets/profit-leak-checklist.md)
+  — the top-of-funnel lead magnet.
+
+**Skills** (type `/<name>` in a Claude Code session scoped to this repo):
+`/draft-outreach` (tailored sequence in the aligned voice) and `/qualify-lead` (score a
+prospect against the qualification scorecard).
 
 > These are the working notes from the virtual-VP-of-Sales sessions. Read them first to
 > pick up full context in a new session.

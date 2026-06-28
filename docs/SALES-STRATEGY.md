@@ -121,6 +121,9 @@ the SGML Sales app** as scale and the accounting/billing integration justify it.
 - **Once the motion is proven** (~5–10 closed the same repeatable way): **codify into
   Claude Code Skills** — e.g. `/qualify-lead`, `/draft-proposal`, `/weekly-pipeline-review`,
   `/prospect-research`. Don't automate an unproven process.
+  - *Built early as low-risk drafting/triage aids (not process automation):*
+    **`/draft-outreach`** and **`/qualify-lead`** (`.claude/skills/`). Treat their output
+    as strong first drafts to review, not auto-send/auto-advance.
 
 ## Current focus
 
