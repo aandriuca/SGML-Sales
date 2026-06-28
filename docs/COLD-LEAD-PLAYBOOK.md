@@ -164,9 +164,10 @@ stage. The templates and formula above are aligned to it; the distilled rules li
 - Outreach and the marketing channel now offer the **same two assets** (Profit-Leak
   Checklist + Margin Leak Review).
 
-**Still to wire (data, not voice):** route the marketing pipeline's opt-in/lead output
-into SGML Sales as `source = "marketing-pipeline"` leads — the `Lead.source` field
-already supports this.
+**Data wiring (done):** the marketing pipeline's opt-in/lead output routes into SGML Sales
+as `source = "marketing-pipeline"` leads via a **feed-only** importer that reads the
+marketing lead-log CSV — it never modifies the marketing pipeline. See
+[`MARKETING-LEAD-IMPORT.md`](MARKETING-LEAD-IMPORT.md).
 
 ---
 
