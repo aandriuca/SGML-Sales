@@ -129,8 +129,9 @@ Referrals/partnerships are being worked separately by the operator.
 
 ## Open threads / next decisions
 
-- Tune the cold-outreach **voice** to match the SGML Marketing Pipeline philosophy (pending
-  repo access — see Cold Lead Playbook).
+- ~~Tune the cold-outreach **voice** to match the SGML Marketing Pipeline philosophy
+  (pending repo access).~~ **Done** — aligned to `pipeline/brand.py`; see
+  [`OUTREACH-VOICE.md`](OUTREACH-VOICE.md) and the realigned Cold Lead Playbook templates.
 - Define the tiered offer ladder to raise blended ACV (operator-led).
 - Pick the interim CRM and load the 8 stages.
 - Build the first concrete skill or asset (candidate: `/draft-outreach`, the Cold Lead
