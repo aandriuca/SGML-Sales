@@ -18,5 +18,9 @@ class Settings(BaseSettings):
     company_name: str = "[COMPANY NAME — placeholder]"
     company_currency: str = "USD"
 
+    # Sourcing integrations. Set STORE_LEADS_API_KEY in .env to enable the
+    # automatic Store Leads pull (services/store_leads.py). Optional.
+    store_leads_api_key: str | None = None
+
 
 settings = Settings()

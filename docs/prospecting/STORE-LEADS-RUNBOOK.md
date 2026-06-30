@@ -85,17 +85,46 @@ Store Leads gives you **domains, not owners**. We sell owner-to-owner, so enrich
 Drop any row that's **marketplace-only**, clearly outside $1–10M, not Canadian, or has
 no reachable owner after enrichment (park those in nurture, not active outreach).
 
-## Step 4 — hand it to SGML Sales
+## Step 4 — load it into SGML Sales (automated)
 
-Give me the **enriched CSV** (ideally with: business name, domain, owner name, owner
-email, est. revenue, platform, category). I will:
+The `Lead` model now carries `website`, `category`, `platform`, and `est_revenue`, so an
+enriched export lands with its full context. Two ways in:
 
-1. **Score ICP fit** (via `/prospect-research` logic) and flag the strongest.
-2. **Dedupe + load** the rows as leads (tagged `source = "store-leads"`) so they enter
-   the pipeline. *(Note: today's `Lead` model stores name/email/source/status — a few
-   additive fields like `website` would let us keep domain/revenue/category on the
-   record; flag me to add them when you want the richer import.)*
-3. Tee up `/draft-outreach` per segment so the first touches are ready.
+### A) One command from a CSV export (any tool)
+
+Export from Store Leads (or Apollo/Clay/a spreadsheet) and run:
+
+```bash
+python -m sgml_sales.services.prospect_import path/to/export.csv
+# enforce the ICP band as a hard filter (Canada + $1M–$10M):
+python -m sgml_sales.services.prospect_import path/to/export.csv --strict
+```
+
+It **maps the columns for you** (tolerant of each tool's header names — `Store Name` /
+`merchant_name` / `Company` all resolve), parses revenue (`$3.2M`, `1,200,000`, `2.5m`),
+**dedupes** by domain (idempotent re-runs), tags `source = "store-leads"`, and prints a
+summary (`imported / duplicate / invalid / filtered_icp`). Ideal export columns: business
+name, domain, owner email, est. revenue, platform, category, country.
+
+### B) Zero-touch via the Store Leads API (paid API access)
+
+If your Store Leads plan includes API access, set the key once and skip the manual export:
+
+```bash
+# .env
+STORE_LEADS_API_KEY=sl_...
+
+python -m sgml_sales.services.store_leads --max 250 --dry-run   # preview
+python -m sgml_sales.services.store_leads --max 250             # fetch + load leads
+```
+
+> One-time setup: the API docs are behind a login, so confirm the exact search path /
+> filter names against your account's **API tab** and adjust the two marked constants in
+> `services/store_leads.py` if needed. The record→lead mapping is shared with the CSV path
+> and unit-tested, so only the request shape might need a tiny tweak.
+
+Then run **`/prospect-research`** on the strongest rows for the angle, and
+**`/draft-outreach`** for the sequence.
 
 ## Step 5 — work it
 

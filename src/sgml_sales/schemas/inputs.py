@@ -35,6 +35,10 @@ class LeadCreate(SQLModel):
     source: str | None = None
     status: LeadStatus = LeadStatus.NEW
     customer_id: int | None = None
+    website: str | None = None
+    category: str | None = None
+    platform: str | None = None
+    est_revenue: float | None = None
 
 
 class LeadConvert(SQLModel):
