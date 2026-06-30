@@ -56,14 +56,26 @@ The business strategy driving this software is captured in:
 - [`docs/OUTREACH-VOICE.md`](docs/OUTREACH-VOICE.md) — outreach voice, aligned to the
   SGML Marketing Pipeline brand (which is **read-only** to this repo; see `CLAUDE.md`).
 - [`docs/ICP-FILTER-SPEC.md`](docs/ICP-FILTER-SPEC.md) — repeatable right-fit list pulls.
+- [`docs/prospecting/STORE-LEADS-RUNBOOK.md`](docs/prospecting/STORE-LEADS-RUNBOOK.md) —
+  sourcing recipe + the automated import (CSV or Store Leads API) into the pipeline.
+- [`docs/prospecting/web-research-seed-list.md`](docs/prospecting/web-research-seed-list.md)
+  — a starter candidate list across all Canadian e-commerce categories.
+- [`docs/prospecting/APOLLO-FREE-WALKTHROUGH.md`](docs/prospecting/APOLLO-FREE-WALKTHROUGH.md)
+  — source leads (with emails) for $0 on Apollo's free plan → straight into the importer.
 - [`docs/MARKETING-LEAD-IMPORT.md`](docs/MARKETING-LEAD-IMPORT.md) — feed-only import of
   marketing leads into SGML Sales.
 - [`docs/lead-magnets/profit-leak-checklist.md`](docs/lead-magnets/profit-leak-checklist.md)
   — the top-of-funnel lead magnet.
 
 **Skills** (type `/<name>` in a Claude Code session scoped to this repo):
-`/draft-outreach` (tailored sequence in the aligned voice) and `/qualify-lead` (score a
-prospect against the qualification scorecard).
+`/prospect-research` (vet a brand/segment + outreach angle), `/draft-outreach` (tailored
+sequence in the aligned voice), and `/qualify-lead` (score a prospect against the
+qualification scorecard).
+
+**Sourcing imports** (CLI): `python -m sgml_sales.services.prospect_import <export.csv>`
+loads any Store Leads/Apollo/Clay/spreadsheet export as leads;
+`python -m sgml_sales.services.store_leads` auto-pulls from Store Leads when
+`STORE_LEADS_API_KEY` is set.
 
 > These are the working notes from the virtual-VP-of-Sales sessions. Read them first to
 > pick up full context in a new session.
