@@ -37,15 +37,19 @@ ICP_MAX_REVENUE = 10_000_000.0
 # Header aliases → canonical field. Lower-cased, stripped before lookup.
 _ALIASES: dict[str, tuple[str, ...]] = {
     "name": ("name", "name / business", "business", "store name", "merchant name",
-             "company", "company name", "store", "merchant"),
-    "website": ("website", "domain", "url", "store url", "homepage", "site", "domain name"),
-    "email": ("email", "owner email", "contact email", "work email", "email address"),
-    "country": ("country", "country code", "location", "merchant location", "region"),
-    "platform": ("platform", "platforms", "ecommerce platform", "tech platform"),
-    "category": ("category", "vertical", "categories", "industry", "niche"),
+             "company", "company name", "company name for emails", "account", "account name",
+             "store", "merchant"),
+    "website": ("website", "domain", "url", "store url", "homepage", "site", "domain name",
+                "company domain", "company website", "primary domain"),
+    "email": ("email", "owner email", "contact email", "work email", "email address",
+              "primary email"),
+    "country": ("country", "country code", "location", "merchant location", "region",
+                "company country", "contact country"),
+    "platform": ("platform", "platforms", "ecommerce platform", "tech platform", "technologies"),
+    "category": ("category", "vertical", "categories", "industry", "niche", "industries"),
     "revenue": ("est_revenue", "estimated revenue", "revenue", "estimated sales",
                 "estimated annual sales", "annual sales", "sales", "estimated monthly sales",
-                "est. revenue", "est revenue"),
+                "annual revenue", "est. revenue", "est revenue"),
 }
 
 # Country values we treat as Canadian.

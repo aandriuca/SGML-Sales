@@ -60,6 +60,8 @@ The business strategy driving this software is captured in:
   sourcing recipe + the automated import (CSV or Store Leads API) into the pipeline.
 - [`docs/prospecting/web-research-seed-list.md`](docs/prospecting/web-research-seed-list.md)
   — a starter candidate list across all Canadian e-commerce categories.
+- [`docs/prospecting/APOLLO-FREE-WALKTHROUGH.md`](docs/prospecting/APOLLO-FREE-WALKTHROUGH.md)
+  — source leads (with emails) for $0 on Apollo's free plan → straight into the importer.
 - [`docs/MARKETING-LEAD-IMPORT.md`](docs/MARKETING-LEAD-IMPORT.md) — feed-only import of
   marketing leads into SGML Sales.
 - [`docs/lead-magnets/profit-leak-checklist.md`](docs/lead-magnets/profit-leak-checklist.md)

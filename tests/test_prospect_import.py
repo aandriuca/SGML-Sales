@@ -100,6 +100,26 @@ def test_normalize_record_from_api_shape():
     assert rec.category == "Beauty"
 
 
+def test_normalize_record_from_apollo_export():
+    # Mimics an Apollo.io people-export row (company + owner email).
+    raw = {
+        "First Name": "Dana",
+        "Last Name": "Reid",
+        "Title": "Founder",
+        "Company": "Northbound Skincare",
+        "Email": "dana@northbound.ca",
+        "Company Domain": "northbound.ca",
+        "Industry": "cosmetics",
+        "Company Country": "Canada",
+    }
+    rec = normalize_record(raw)
+    assert rec.name == "Northbound Skincare"  # company, not the person's first name
+    assert rec.email == "dana@northbound.ca"
+    assert rec.website == "northbound.ca"
+    assert rec.category == "cosmetics"
+    assert rec.country == "Canada"
+
+
 def test_import_prospects_from_api_records(session: Session):
     rec = {"merchant_name": "Glow Labs", "domain": "glowlabs.ca", "estimated_sales": 2_750_000}
     records = [normalize_record(rec), normalize_record(dict(rec))]  # second row is a duplicate
