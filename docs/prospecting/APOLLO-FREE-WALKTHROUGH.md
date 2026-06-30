@@ -27,6 +27,12 @@ with their company attached). Apply these filters (left panel):
 - **Job Titles:** `Founder`, `Owner`, `CEO`, `Co-Founder`, `President`
   *(we sell owner-to-owner — skip bookkeepers/finance staff).*
 
+> ⚠️ **Most common mistake — do NOT filter by `CFO` / `Controller` / `Finance`.**
+> They are the *barrier*, not the buyer: SGML's fractional-CFO offer threatens their
+> role, so they'll block it. Always target the **owner/founder**. (A whole batch once
+> got pulled as CFOs and nearly all of it was unusable — only the one row whose contact
+> was the *Founder* was workable.)
+
 **About the company**
 - **Location / Company Location:** `Canada`
 - **# Employees:** `1-10`, `11-20`, `21-50`
@@ -34,6 +40,11 @@ with their company attached). Apply these filters (left panel):
 - **Technologies:** `Shopify` *(targets real own-storefront operators — our wedge).*
 - **Industry (optional):** `Retail`, `Consumer Goods`, `Apparel & Fashion`,
   `Health, Wellness & Fitness`, `Cosmetics`.
+
+The **Technologies = Shopify** filter is what keeps you on real own-storefront brands.
+Mentally exclude what slips through: **B2B wholesalers/distributors, manufacturers,
+SaaS/tech vendors, marketing agencies, industry associations, accounting firms
+(competitors!), and anything public or clearly > $10M.**
 
 Tip: keep it broad at first (all categories), then narrow if you get too many.
 
