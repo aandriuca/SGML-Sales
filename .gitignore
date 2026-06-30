@@ -24,6 +24,11 @@ env/
 *.sqlite
 *.sqlite3
 
+# Prospect import inbox — keep the folder + README, ignore the dropped lists
+# (they may contain contact data and shouldn't be committed)
+data/prospect-imports/*
+!data/prospect-imports/README.md
+
 # Editor / OS
 .idea/
 .vscode/
